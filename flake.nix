@@ -13,7 +13,7 @@
         treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
         microui-zig = pkgs.stdenv.mkDerivation {
           inherit pname;
-          version = "0.1.0";
+          version = "dev";
           src = ./.;
 
           nativeBuildInputs = [
