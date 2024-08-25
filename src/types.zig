@@ -102,4 +102,15 @@ pub const mu_Style = struct {
 };
 
 pub const mu_Context = struct {
+    text_width: fn (font: mu_Font, str: u8, len: isize) isize,
+    text_height: fn (font: mu_Font) isize,
+    draw_frame: fn (ctx: mu_Context, rect: mu_Rect, colorid: isize) void,
+
+    _style: mu_Style,
+    style: mu_Style,
+    hover: mu_Id,
+    focus: mu_Id,
+    last_id: mu_Id,
+    last_rect: mu_Rect,
+    last_zindex: isize,
 };
