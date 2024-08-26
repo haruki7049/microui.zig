@@ -40,6 +40,15 @@ pub const Rect = struct {
     y: isize,
     width: isize,
     height: isize,
+
+    pub fn init(x: isize, y: isize, width: isize, height: isize) Rect {
+        return Rect {
+            .x = x,
+            .y = y,
+            .width = width,
+            .height = height,
+        };
+    }
 };
 
 pub const Color = struct {
