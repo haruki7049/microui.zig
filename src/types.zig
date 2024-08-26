@@ -33,6 +33,13 @@ pub const TextCommand = struct {
 pub const Vec2 = struct {
     x: isize,
     y: isize,
+
+    pub fn init(x: isize, y: isize) Vec2 {
+        return Vec2 {
+            .x = x,
+            .y = y,
+        };
+    }
 };
 
 pub const Rect = struct {
