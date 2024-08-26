@@ -28,14 +28,14 @@ pub const TextCommand = struct {
     font: Font,
     pos: Vec2,
     color: Color,
-    str: [] u8,
+    str: []u8,
 };
 pub const Vec2 = struct {
     x: isize,
     y: isize,
 
     pub fn init(x: isize, y: isize) Vec2 {
-        return Vec2 {
+        return Vec2{
             .x = x,
             .y = y,
         };
@@ -49,7 +49,7 @@ pub const Rect = struct {
     height: isize,
 
     pub fn init(x: isize, y: isize, width: isize, height: isize) Rect {
-        return Rect {
+        return Rect{
             .x = x,
             .y = y,
             .width = width,
@@ -65,7 +65,7 @@ pub const Color = struct {
     a: u8,
 
     pub fn init(r: u8, g: u8, b: u8, a: u8) Color {
-        return Color {
+        return Color{
             .r = r,
             .g = g,
             .b = b,

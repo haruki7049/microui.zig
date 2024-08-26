@@ -2,9 +2,9 @@ const types = @import("./types.zig");
 
 pub const unclipped_rect = types.Rect.init(0, 0, 0x1000000, 0x1000000);
 
-const default_style = types.Style {
+const default_style = types.Style{
     .font = undefined,
-    .size = types.Vec2 {
+    .size = types.Vec2{
         .x = 68,
         .y = 10,
     },
@@ -14,7 +14,7 @@ const default_style = types.Style {
     .title_height = 24,
     .scrollbar_size = 12,
     .thumb_size = 8,
-    .colors = types.ColorSet {
+    .colors = types.ColorSet{
         .text_color = types.Color.init(230, 230, 230, 255),
         .border_color = types.Color.init(25, 25, 25, 255),
         .windowbg_color = types.Color.init(50, 50, 50, 255),
