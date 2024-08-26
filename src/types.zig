@@ -7,13 +7,6 @@ pub const mu_PoolItem = struct {
     last_update: isize,
 };
 
-pub const unclipped_rect: mu_Rect = mu_Rect {
-    .x = 0,
-    .y = 0,
-    .width = 0x1000000,
-    .height = 0x1000000,
-};
-
 pub const mu_BaseCommand = struct {
     type: isize,
     size: isize,
