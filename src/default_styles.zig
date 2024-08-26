@@ -4,10 +4,7 @@ pub const unclipped_rect = types.Rect.init(0, 0, 0x1000000, 0x1000000);
 
 const default_style = types.Style{
     .font = undefined,
-    .size = types.Vec2{
-        .x = 68,
-        .y = 10,
-    },
+    .size = types.Vec2.init(68, 10),
     .padding = 5,
     .spacing = 4,
     .indent = 24,
