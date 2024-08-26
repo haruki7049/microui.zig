@@ -1,4 +1,6 @@
 pub const mu_Font = undefined;
+pub const mu_Id = usize;
+pub const mu_Real = f64;
 
 pub const mu_PoolItem = struct {
     id: mu_Id,
@@ -39,8 +41,6 @@ pub const mu_Vec2 = struct {
     x: isize,
     y: isize,
 };
-
-pub const mu_Id = usize;
 
 pub const mu_Rect = struct {
     x: isize,
@@ -113,4 +113,18 @@ pub const mu_Context = struct {
     last_id: mu_Id,
     last_rect: mu_Rect,
     last_zindex: isize,
+};
+
+const mu_Mouse = enum {
+    LEFT,
+    RIGHT,
+    MIDDLE,
+};
+
+const mu_Key = enum {
+    SHIFT,
+    CTRL,
+    ALT,
+    BACKSPACE,
+    RETURN,
 };
